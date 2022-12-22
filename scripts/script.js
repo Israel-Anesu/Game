@@ -10,8 +10,7 @@ function game(){
             console.log(text);
         })
     })
-    }
-    
+    }    
 
     function computer_choice(){
         let choice = '';
@@ -67,13 +66,10 @@ function game(){
     }else{
         points[computer_score] = 10;
     }
-
-    return points
+    return points;
 }
 
 scores = game();
-
-
 
 let score_sheet = document.querySelector('div');
 score_sheet.innerHTML = `Computer Score: ${scores[computer_score]} Human Score: ${scores[human_score]}`;
