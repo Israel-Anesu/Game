@@ -8,6 +8,7 @@ function computerPlay() {
     return choices[Math.floor(Math.random() * choices.length)]
 }
 
+// Disable buttons
 function disableButtons() {
     buttons.forEach(elem => {
         elem.disabled = true
